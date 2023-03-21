@@ -2,6 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>CodePen - Daily UI #013 | Direct Messaging</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
@@ -11,75 +12,21 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="center">
-  <div class="contacts">
+  <div class="contacts" id="contacts">
     <div class="contacts-header">
-      <i class="fas fa-bars fa-2x"></i>
-      <h2>
-        Contacts
-      </h2>
+      <h2>Contacts</h2>
+        <div class="search">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+           <input type="text" class="searchTerm" placeholder="Поиск">
+        </div>
     </div>
-    <div class="contacts-body">
-      <div class="contact">
-        <div class="pic rogers"></div>
-        <div class="badge">
-          14
-        </div>
-        <div class="name">
-          Steve Rogers
-        </div>
-        <div class="message">
-          That is America's ass рџ‡єрџ‡ёрџЌ‘
-        </div>
-      </div>
-      <div class="contact">
-        <div class="pic stark"></div>
-        <div class="name">
-          Tony Stark
-        </div>
-        <div class="message">
-          Uh, he's from space, he came here to steal a necklace from a wizard.
-        </div>
-      </div>
-      <div class="contact">
-        <div class="pic banner"></div>
-        <div class="badge">
-          1
-        </div>
-        <div class="name">
-          Bruce Banner
-        </div>
-        <div class="message">
-          There's an Ant-Man *and* a Spider-Man?
-        </div>
-      </div>
-      <div class="contact">
-        <div class="pic thor"></div>
-        <div class="name">
-          Thor Odinson
-        </div>
-        <div class="badge">
-          3
-        </div>
-        <div class="message">
-          I like this one
-        </div>
-      </div>
-      <div class="contact" id="">
-        <div class="pic danvers"></div>
-        <div class="badge">
-          2
-        </div>
-        <div class="name">
-          Carol Danvers
-        </div>
-        <div class="message">
-          Hey Peter Parker, you got something for me?
-        </div>
-      </div>
+    <div class="contacts-body" id="contacts-body">
     </div>
   </div>
-  <div class="chat">
-      <div class="contact bar">
+  <div class="chat" id="chat">
+      <!-- <div class="contact bar">
         <div class="pic stark"></div>
         <div class="name">
           Tony Stark
@@ -87,34 +34,35 @@
         <div class="seen">
           Today at 12:56
         </div>
-      </div>
-      <div class="messages" id="chat">
-        <div class="time">
+      </div> -->
+      <div class="messages" id="correspondence">
+        <!-- <div class="time">
           Today at 11:41
         </div>
-        <div class="message parker">
+        <div class="message my-message">
           Hey, man! What's up, Mr Stark?В рџ‘‹
         </div>
-        <div class="message stark">
+        <div class="message">
           Kid, where'd you come from? 
         </div>
-        <div class="message parker">
+        <div class="message my-message">
           Field trip! рџ¤Ј
         </div>
-        <div class="message parker">
+        <div class="message my-message">
           Uh, what is this guy's problem, Mr. Stark? рџ¤”
         </div>
-        <div class="message stark">
+        <div class="message">
           Uh, he's from space, he came here to steal a necklace from a wizard.
-        </div>
-        <div class="message stark">
+        </div> -->
+        <!--Append if message typing-->
+        <!-- <div class="message">
           <div class="typing typing-1"></div>
           <div class="typing typing-2"></div>
           <div class="typing typing-3"></div>
-        </div>
+        </div> -->
       </div>
       <div class="input">
-        <i class="fas fa-camera"></i><i class="far fa-laugh-beam"></i><input placeholder="Type your message here!" type="text" /><i class="fas fa-microphone"></i>
+        <i class="fas fa-camera"></i><i class="far fa-laugh-beam"></i><input placeholder="Type your message here!" type="text" id="message-input"/><i class="fas fa-microphone"></i>
       </div>
     </div>
 </div>
