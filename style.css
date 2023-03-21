@@ -198,13 +198,10 @@ body, html {
 .chat .input i {
   font-size: 1.5rem;
   margin-right: 1rem;
-  color: #666;
   cursor: pointer;
   transition: color 200ms;
 }
-.chat .input i:hover {
-  color: #333;
-}
+
 .chat .input input {
   border: none;
   background-image: none;
@@ -285,7 +282,7 @@ body, html {
 .back-div {
   display: flex;
   justify-content: end;
-  color: #838383;
+  color: #00A884;
 }
 .back {
   display: flex;
@@ -296,6 +293,14 @@ body, html {
   border-radius: 30px;
   background-color: white;
   box-shadow: 0px 2px 10px 5px #e7e7e7;
+}
+
+.fa-camera, .fa-volume-off, .fa-microphone {
+  color: #00A884;
+}
+
+.fa-camera:hover, .fa-volume-off:hover, .fa-microphone:hover {
+  color: #008f70;
 }
 
 @-webkit-keyframes typing {
