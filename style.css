@@ -202,7 +202,7 @@ body, html {
   transition: color 200ms;
 }
 
-.chat .input input {
+.chat .input textarea {
   border: none;
   background-image: none;
   background-color: white;
@@ -214,6 +214,12 @@ body, html {
   font-family: Red hat Display, sans-serif;
   font-weight: 400;
   letter-spacing: 0.025em;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
 }
 .chat .input input:placeholder {
   color: #999;

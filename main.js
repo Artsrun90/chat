@@ -16,7 +16,6 @@ const messagesList = [
 
 function showContacts(contacts) {
     let contactsBody = document.getElementById("contacts-body");
-    console.log(contactsBody);
     contacts.forEach(contact => {
         let contactDiv = document.createElement("div");
         let contactPicDiv = document.createElement("div");
@@ -41,7 +40,6 @@ function showContacts(contacts) {
         contactDiv.appendChild(contactBageDiv);
         contactDiv.appendChild(contactMessageDiv);
         contactDiv.appendChild(contactNameDiv);
-        console.log(contactDiv);
         contactsBody.appendChild(contactDiv);
     });
 }
@@ -79,7 +77,6 @@ function createChat(chat) {
     let correspondenceDiv = document.getElementById("correspondence");
     let timeDiv = document.createElement("div");
     timeDiv.setAttribute("class", "time");
-    console.log(firstChat.correspondence);
     timeDiv.innerHTML = firstChat.correspondence.date;
     correspondenceDiv.appendChild(timeDiv);
 
@@ -102,7 +99,6 @@ function getChat(that) {
         correspondence.removeChild(correspondence.lastChild);
     };
     let findedChat = messagesList.find(x => x.id == that.id)
-    console.log("findedChat: ", findedChat);
     createChat(findedChat);
     if (window.screen.width <= 640) {
         let contacts = document.getElementById("contacts");
@@ -123,5 +119,4 @@ window.onload = function () {
     showContacts(contacts);
     createChat(messagesList[0]);
 }
-
 
