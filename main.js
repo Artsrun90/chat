@@ -51,6 +51,16 @@ function createChat(chat) {
     let chatDiv = document.getElementById("chat");
     let chatHeadertDiv = document.createElement("div");
     chatHeadertDiv.setAttribute("class", "contact bar");
+    if (window.screen.width <= 640) {
+        let chatHeaderBacktDiv = document.createElement("div");
+        chatHeaderBacktDiv.setAttribute("class", "back-div");
+        let chatHeaderBacktI = document.createElement("i");
+        chatHeaderBacktI.setAttribute("class", "fa fa-arrow-left back");
+        chatHeaderBacktI.setAttribute("aria-hidden", "true");
+        chatHeaderBacktI.setAttribute("onclick", "backToContacts()");
+        chatHeaderBacktDiv.appendChild(chatHeaderBacktI);
+        chatHeadertDiv.appendChild(chatHeaderBacktDiv);        
+    }
     let chatHeaderPictDiv = document.createElement("div");
     chatHeaderPictDiv.setAttribute("class", "pic");
     chatHeaderPictDiv.style.backgroundImage = `url(${firstChat.image_url})`;
@@ -102,19 +112,16 @@ function getChat(that) {
     }
 }
 
+function backToContacts() {
+    let chat = document.getElementById("chat");
+    let contacts = document.getElementById("contacts");
+    contacts.style.display = "flex";
+    chat.style.display = "none";
+}
+
 window.onload = function () {
     showContacts(contacts);
     createChat(messagesList[0]);
-}
-
-window.addEventListener('resize', function(event) {
-    if (window.innerWidth <= 640) {
-        console.log(window.innerWidth);
-    }
-}, true);
-
-if (window.screen.width <= 640) {
-    console.log(window.screen.width);
 }
 
 
