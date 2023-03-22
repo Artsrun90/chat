@@ -118,5 +118,10 @@ function backToContacts() {
 window.onload = function () {
     showContacts(contacts);
     createChat(messagesList[0]);
+    if (window.screen.width <= 640) {
+        document.getElementById("fa-microphone").style.display = "none";
+        document.getElementById("fa-volume-off").style.display = "none";
+        document.getElementById("fa-camera").style.display = "none";
+    }
 }
 
