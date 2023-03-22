@@ -1,17 +1,17 @@
 const contacts = [
-    {id: 1, name: "Steve Rogers", message: "That is America's ass рџ‡єрџ‡ёрџЌ‘", mesage_count: 14, image_url: "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/7c/Cap.America_%28We_Don%27t_Trade_Lives_Vision%29.png" },
-    {id: 2, name: "Tony Stark", message: "Uh, he's from space, he came here to steal a necklace from a wizard.", mesage_count: 0, image_url: "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/73/SMH_Mentor_6.png" },
-    {id: 3, name: "Bruce Banner", message: "There's an Ant-Man *and* a Spider-Man?", mesage_count: 1, image_url: "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/4/4f/BruceHulk-Endgame-TravelingCapInPast.jpg" },
-    {id: 4, name: "Thor Odinson", message: "I like this one", mesage_count: 3, image_url: "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/ThorFliesThroughTheAnus.jpg" },
-    {id: 5, name: "Carol Danvers", message: "Hey Peter Parker, you got something for me?", mesage_count: 2, image_url: "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/05/HeyPeterParker.png" }
+    {id: 1, name: "Steve Rogers", message: "That is America's ass рџ‡єрџ‡ёрџЌ‘", mesage_count: 14, image_url: "images/rojers.png" },
+    {id: 2, name: "Tony Stark", message: "Uh, he's from space, he came here to steal a necklace from a wizard.", mesage_count: 0, image_url: "images/stark.png" },
+    {id: 3, name: "Bruce Banner", message: "There's an Ant-Man *and* a Spider-Man?", mesage_count: 1, image_url: "images/benner.png" },
+    {id: 4, name: "Thor Odinson", message: "I like this one", mesage_count: 3, image_url: "images/thor.png" },
+    {id: 5, name: "Carol Danvers", message: "Hey Peter Parker, you got something for me?", mesage_count: 2, image_url: "images/denvers.png" }
 ]
 
 const messagesList = [
-    {id: 1, image_url:"https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/7c/Cap.America_%28We_Don%27t_Trade_Lives_Vision%29.png", name: "Steve Rogers", seen: "Today at 15:06", correspondence: {date: "Today at 15:06", messages: ["aaaaa", "bbbbbbb", "ccccccc", "dddddddd", "aaaaa", "bbbbbbb", "ccccccc", "dddddddd","aaaaa", "bbbbbbb", "ccccccc", "dddddddd","aaaaa", "bbbbbbb", "ccccccc", "dddddddd"]}},
-    {id: 2, image_url:"https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/73/SMH_Mentor_6.png", name: "Tony Stark", seen: "Today at 15:06", correspondence: {date: "Today at 12:56", messages: ["eeeeeee", "ffffffff", "ddddddd", "jjjjjjjjjj"]}},
-    {id: 3, image_url:"https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/4/4f/BruceHulk-Endgame-TravelingCapInPast.jpg", name: "Bruce Banner", seen: "Today at 15:06", correspondence: {date: "Today at 02:11", messages: ["kkkkkkkkkkk", "mmmmmmmmmmm", "nnnnnnnnn", "lllll"]}},
-    {id: 4, image_url:"https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/ThorFliesThroughTheAnus.jpg", name: "Thor Odinson", seen: "Today at 15:06", correspondence: {date: "Today at 15:50", messages: ["ffffffff", "oooooooo", "ttttttt", "uuuuuu"]}},
-    {id: 5, image_url:"https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/05/HeyPeterParker.png", name: "Carol Danvers", seen: "Today at 15:06", correspondence: {date: "Today at 16:22", messages: ["xxxxxxxx", "zzzzzzz", "ttttttttt", "hhhhhhhhhhh"]}}
+    {id: 1, image_url:"images/rojers.png", name: "Steve Rogers", seen: "Today at 15:06", correspondence: {date: "Today at 15:06", messages: ["aaaaa", "bbbbbbb", "ccccccc", "dddddddd", "aaaaa", "bbbbbbb", "ccccccc", "dddddddd","aaaaa", "bbbbbbb", "ccccccc", "dddddddd","aaaaa", "bbbbbbb", "ccccccc", "dddddddd"]}},
+    {id: 2, image_url:"images/stark.png", name: "Tony Stark", seen: "Today at 15:06", correspondence: {date: "Today at 12:56", messages: ["eeeeeee", "ffffffff", "ddddddd", "jjjjjjjjjj"]}},
+    {id: 3, image_url:"images/benner.png", name: "Bruce Banner", seen: "Today at 15:06", correspondence: {date: "Today at 02:11", messages: ["kkkkkkkkkkk", "mmmmmmmmmmm", "nnnnnnnnn", "lllll"]}},
+    {id: 4, image_url:"images/thor.png", name: "Thor Odinson", seen: "Today at 15:06", correspondence: {date: "Today at 15:50", messages: ["ffffffff", "oooooooo", "ttttttt", "uuuuuu"]}},
+    {id: 5, image_url:"images/denvers.png", name: "Carol Danvers", seen: "Today at 15:06", correspondence: {date: "Today at 16:22", messages: ["xxxxxxxx", "zzzzzzz", "ttttttttt", "hhhhhhhhhhh"]}}
 ]
 
 function showContacts(contacts) {

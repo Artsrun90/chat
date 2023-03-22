@@ -74,7 +74,7 @@ body, html {
   top: 0;
   left: 2.5rem;
   background: #333;
-  color: white;
+  color: #00A884;
 }
 
 .contacts {
@@ -89,9 +89,6 @@ body, html {
   box-shadow: 0 0 8rem 0 rgba(0, 0, 0, 0.1), 2rem 2rem 4rem -3rem rgba(0, 0, 0, 0.5);
   transition: transform 500ms;
 }
-/* .contacts h2 {
-  margin-left: 1.5rem;
-} */
 
 .contacts .contact:last-child {
   margin: 0;
@@ -106,6 +103,10 @@ body, html {
   flex-direction: column;
   background: white;
   margin-left: 1.5rem;
+}
+.contacts-header h2 {
+  font-size: 21px;
+  color: #00A884;
 }
 .contacts-body {
   overflow-y: auto;
